@@ -1,0 +1,393 @@
+body {
+   margin: 0;
+   padding: 0;
+   font-family: 'Libre Baskerville', serif;
+   border: solid white 2em;
+   
+}
+ol,
+ul {
+   list-style: none;
+}
+a {
+   text-decoration: none;
+}
+header {
+   background-color: rgb(0, 0, 0);
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   border: solid white;
+}
+h2 {
+   color: white;
+   font-size: 2em;
+}
+header a i {
+   color: white;
+   font-size: 4em;
+   padding: 0.5em;
+}
+header nav ul {
+   display: flex;
+   gap: 1.1em;
+   margin-right: 5em;
+}
+header nav ul li a {
+   color: white;
+}
+
+@media (max-width: 1023px) {
+   .header {
+      width: 45%;
+   }
+}
+@media (max-width: 1024px) {
+   .header {
+      width: 45%;
+   }
+}
+
+.seccion-1 {
+   background-color: rgb(0, 0, 0);
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   padding: 2em;
+   font-size: 2em;
+   text-align: center;
+   color: rgb(106, 21, 192);
+}
+section {
+   display: block;
+}
+.seccion-1 div img {
+   width: 100%;
+   height: 10%;
+   border: solid 0.5em;color: rgb(152, 11, 218);
+   border-radius: 100%;
+} 
+main {
+   display: block;
+}
+div {
+   display: block;
+}
+.seccion-2 img {
+   width: 100%;
+   border: solid 0.5em;color: rgb(152, 11, 218);
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+footer {
+   background-color: black;
+   width: 100%;
+   color: aliceblue;
+   display: flex;
+   border: solid white;
+}
+footer {
+   display: block;
+}
+footer div h3 {
+   padding: 0.3em;
+   font-size: 2em;
+   text-align: center;
+   display: block;
+   align-items: center;
+}
+
+@media (max-width: 1023px) {
+   .tarjetas {
+      width: 100%;
+   }
+}
+@media (max-width: 1024px) {
+   .tarjetas {
+      width: 100%;
+   }
+}
+.container {
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
+   background-color: black;
+}
+.card-container {
+   margin: 8px;
+   width: 95%;
+   display: flex;
+   margin: 10px;
+   padding: 10px;
+   justify-content: center;
+}
+.card {
+   border: 4px solid rgb(140, 13, 214);
+   border-radius: 10%;
+   padding: 40px;
+   width: 100%;
+   height: 100%;
+   max-width: 2000px;
+   display: flex;
+   flex-direction: column;
+   justify-content: flex-end;
+   align-items: center;
+   background-color: black;
+}
+.image-container {
+   border-radius: 10%;
+   width: 50%;
+   height: 100%;
+}
+.text {
+   font-size: 1.2em;
+   width: 100%;
+   text-align: center;
+   color: blueviolet;
+}
+div a i {
+   color: white; 
+}
+.perrito {
+    position: fixed;
+    bottom: 22px;
+    right: 39px;
+    font-size: 4em;
+    padding: 0.3em; 
+}
+
+@media(min-width: 768px) {
+   .card-container {
+       width: 45%;
+   }
+}
+@media(min-width: 1024px) {
+   .card-container {
+       width: 30%;
+   }
+}
+.card img {
+   width: 70%;
+   height: 40%;
+   border-radius: 50%;
+   border: 4px solid rgb(140, 13, 214);
+}
+#check {
+   display: none;
+}
+.checkbtn {
+   font-size: 40px;
+   color: rgb(225, 0, 255);
+   float: right;
+   line-height: 80px;
+   margin-right: 40px;
+   cursor: pointer;
+   display: none;
+}
+@media (max-width: 768px) {
+   header {
+      background-color: black;
+   }
+   .acerca-de {
+      text-align: center;
+   }
+   .acerca-imagen {
+      margin-bottom: 40px;
+   }
+   h2.fuente-acento {
+     text-align: center; 
+   }
+   .checkbtn {
+      display: block;
+   }
+   #encabezado ul {
+      position: fixed;
+      width: 100%;
+      height: 100vh;
+      background-color: rgb(0, 0, 0);
+      text-align: center;
+
+      top: 80px;
+      left: 100%;
+      transition: all 0.5s;
+   }
+   #check:checked ~ ul {
+      left: 0;
+      display: block;
+   }
+   #encabezado nav ul li {
+      display: block;
+      margin: 50px 0;
+      line-height: 30px;
+      background-color: rgb(116, 42, 165);
+   }
+   #encabezado nav ul li a {
+      font-size: 20px;
+   }
+   #check:checked ~ .checkbtn {
+      color: rgb(85, 16, 214);
+   }
+}
+/* ------------- CSS General ------------- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    color: #5d6063;
+    background-color: #eaedf0;
+    font-family: "Helvetica", "Arial", sans-serif;
+    font-size: 16px;
+  }
+  
+  /* ------------- Encabezado Contacto ------------- */
+  
+  footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .form-header {
+    text-align: center;
+    background-color: #000000;
+    border: 1px solid #b20ad4;
+    border-radius: 3px;
+  
+    width: 80%;
+    margin: 10px auto;
+    padding: 50px;
+  }
+  
+  .form-header h1 {
+    font-size: 30px;
+    margin-bottom: 20px;
+  }
+  
+  /* ------------- Formulario ------------- */
+  
+  .formulario {
+    background-color: #090a0a;
+    border: 1px solid #b70aeb;
+    border-radius: 3px;
+  
+    width: 80%;
+    padding: 50px;
+    margin: 30px 0 40px 0;
+  }
+  * ------------- Campos del Formulario ------------- */
+
+.form-row {
+  margin-bottom: 40px;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.form-row input[type="text"] {
+  background-color: #000000;
+  border: 0;
+  border-radius: 6px;
+  width: 100%;
+  padding: 7px;
+  font-size: 14px;
+}
+
+.form-row label {
+  margin-bottom: 3px;
+  text-align: initial;
+}
+/* ------------- Para Pantallas de más de 700px ------------- */
+@media only screen and (min-width: 1024px) {
+    .form-header {
+      padding: 50px;
+    }
+  
+    .form-row {
+      flex-direction: row;
+      align-items: flex-start;
+      margin-bottom: 20px;
+    }
+    .form-row input[type="text"] {
+      width: 250px;
+      height: initial;
+    }
+    .form-row label {
+      text-align: right;
+      width: 120px;
+      margin-top: 7px;
+      padding-right: 20px;
+    }
+  }
+  .form-row input[type="text"], 
+  .form-row input[type="email"] {
+    background-color: rgb(243, 239, 239);
+    border: 0;
+    border-radius: 6px;
+    width: 100%;
+    padding: 7px;
+    font-size: 14px;
+  }
+  .form-row textarea {
+    font-family: "Helvetica", "Arial", sans-serif;
+    font-size: 14px;
+  
+  
+    background-color: #f1f1f1;
+    border: 0;
+    border-radius: 6px;
+  
+  
+    min-height: 200px;
+    margin-bottom: 10px;
+    padding: 7px;
+    resize: none;
+  
+  
+    width: 100%;
+  }
+  /* ------------- Para Pantallas de más de 700px ------------- */
+  
+  
+  .form-row textarea {
+      width: 250px;
+    }
+
+    .form-row button {
+        font-size: 16px;
+        font-weight: bold;
+      
+      
+        color: #ffffff;
+        background-color: #b559da;
+      
+      
+        border: none;
+        border-radius: 3px;
+      
+      
+        padding: 10px 40px;
+        cursor: pointer;
+      }
+      
+      
+      .form-row button:hover {
+        background-color: #840ea1;
+      }
+      
+      
+      .form-row button:active {
+        background-color: #a215da;
+      }
+      
+      
+      /* ------------- Para Pantallas de más de 700px ------------- */
+      
+      
+      .form-row button {
+        margin-left: 120px;
+      }
